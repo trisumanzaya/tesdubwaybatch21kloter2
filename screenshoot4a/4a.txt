@@ -1,0 +1,11 @@
+SELECT * FROM cycle
+
+
+SELECT * FROM `cycle` WHERE id
+
+UPDATE `cycle` SET `price` = '32000000', `stock` = '3' WHERE `cycle`.`id` = 4;
+
+
+SELECT * FROM `cycle` WHERE stock = 3
+
+SELECT *, merk.name as merk_name FROM cycle JOIN merk ON merk.id = cycle.id_merk WHERE merk.name='unity'
